@@ -1,0 +1,64 @@
+body {
+
+    background:black;
+
+    color:white;
+
+    font-family:monospace;
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    }
+
+
+    .container {
+
+    text-align:center;
+
+    border:1px solid white;
+
+    padding:40px;
+
+    width:400px;
+
+    }
+
+
+    h1 {
+
+    animation:flicker 1s infinite;
+
+    }
+
+
+    #status {
+
+    margin-top:30px;
+
+    color:red;
+
+    }
+
+
+    @keyframes flicker {
+
+    0% {
+    opacity:1;
+    }
+
+    50% {
+    opacity:0.3;
+    }
+
+    100% {
+    opacity:1;
+    }
+
+    }
+}
