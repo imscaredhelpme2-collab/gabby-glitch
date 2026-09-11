@@ -26,25 +26,19 @@ const glitches = [
 ];
 
 
-let glitch = glitches[Math.floor(Math.random() * glitches.length)];
+// Pick random glitch
+let chosenGlitch =
+glitches[Math.floor(Math.random() * glitches.length)];
 
 
-document.getElementById("glitchName").innerHTML =
-glitch.name;
+// Put information into HTML
+document.getElementById("glitch-name").textContent =
+chosenGlitch.name;
 
 
-document.getElementById("glitchMessage").innerHTML =
-glitch.message;
+document.getElementById("glitch-message").textContent =
+chosenGlitch.message;
 
 
-document.getElementById("time").innerHTML =
+document.getElementById("glitch-time").textContent =
 new Date();
-
-
-    setInterval(function(){
-
-    document.getElementById("status").innerHTML =
-    messages[Math.floor(Math.random()*messages.length)];
-
-    },2000);
-]
